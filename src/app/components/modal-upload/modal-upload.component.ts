@@ -44,7 +44,9 @@ export class ModalUploadComponent implements OnInit {
     let urlPrev = reader.readAsDataURL(archivo);
     reader.onloadend=()=> this.prev = reader.result as string;
   }
+  
 
+  //Subir la imagen
   subirImagen() {
     this._subirArchivoService.subirArchivo(this.imagenSubir, this._modalUploadService.tipo, this._modalUploadService.id)
       .then(resp=>{
