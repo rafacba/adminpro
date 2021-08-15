@@ -1,0 +1,22 @@
+<div class="fondo-negro animated fadeIn" [ngClass]="_modalUploadService.oculto">
+    <div style="display: block;" class="modal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Modal title</h5>
+                    <button (click)="_modalUploadService.ocultarModal()" type="button" class="btn-close" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" align="center">
+                    <img *ngIf="!prev" [src]="'xxx' |imagen" class="w150">
+                    <img *ngIf="prev" [src]="prev" class="w150">
+
+                    <input (change)="seleccionImagen($event)" type="file">
+                </div>
+                <div class="modal-footer">
+                    <button (click)="cerrarModal()" type="button" class="btn btn-secondary">Close</button>
+                    <button [disabled]="!prev" (click)="subirImagen()" type="button" class="btn btn-primary">Subir Imagen</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
