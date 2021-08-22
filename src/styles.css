@@ -36,3 +36,7 @@
 .oculto {
     display: none;
 }
+
+.bordes {
+    border-radius: 15px;
+}
