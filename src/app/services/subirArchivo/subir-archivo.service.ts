@@ -23,7 +23,7 @@ export class SubirArchivoService {
         //El 4 implica cuando termine de subir el archivo
         if(xhr.readyState === 4) {
           if(xhr.status === 200) {
-            console.log('Imagen subida');
+            //console.log('Imagen subida');
             resolve(JSON.parse(xhr.response))
           } else {
             console.log('Fallo la subida');

@@ -69,7 +69,7 @@ export class RegisterComponent {
 
     this._usuarioService.crearUsuario(usuario)
         .subscribe(resp => {
-          console.log(resp);
+          //console.log(resp);
           this.router.navigate(['/login']);
         });
   }

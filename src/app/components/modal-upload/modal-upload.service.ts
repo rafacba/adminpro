@@ -12,6 +12,7 @@ export class ModalUploadService {
   public notificacion = new EventEmitter<any>();
 
   constructor() {
+     //console.log("VERIFICAR");
     //console.log('Modal Upload Listo');
    }
 

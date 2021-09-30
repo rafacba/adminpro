@@ -8,7 +8,7 @@
         <!-- Sidebar navigation-->
         <nav class="sidebar-nav">
             <ul id="sidebarnav">
-                <li class="user-profile">
+                <li class="user-profile" *ngIf="usuario">
                     <a class="has-arrow waves-effect waves-dark" href="#" aria-expanded="false">
                         <img [src]="usuario.img || '' | imagen" alt="user" />
                         <span class="hide-menu">{{usuario.nombre}} </span>
@@ -31,9 +31,6 @@
                                 {{ submenu.titulo}} 
                             </a>
                         </li>
-                        <!-- <li><a href="index2.html">Analytical</a></li>
-                        <li><a href="index3.html">Demographical</a></li>
-                        <li><a href="index4.html">Modern</a></li> -->
                     </ul>
                 </li>
             </ul>
