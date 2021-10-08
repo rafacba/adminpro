@@ -1,6 +1,8 @@
 export { SubirArchivoService } from './subirArchivo/subir-archivo.service';
 export { LoginGuardGuard } from './guards/login-guard.guard';
 export { AdminGuard } from './guards/admin.guard';
+export { VerificaTokenGuard } from './guards/verifica-token.guard';
+
 
 export { SettingsService } from "./settings.service";
 export { SharedService } from './shared.service';
